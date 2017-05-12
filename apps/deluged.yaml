@@ -1,0 +1,23 @@
+---
+backup_files:
+- APPPATH/web.conf
+- APPPATH/core.conf
+constants:
+  APPDEFAULTLOC: '{{ SCRIPTPATH }}/{{ APPNAME }}/deluged.default'
+  APPDEFAULTPASS: 'deluge'
+  APPDEPS: 'deluge-web'
+  APPDPORT: '8112'
+  APPINITDLOC: '{{ SCRIPTPATH }}/{{ APPNAME }}/deluged.init'
+  APPNAME: 'deluged'
+  APPPATH: '/home/{{ UNAME }}/.config/deluge'
+  APPREPOSITORYNAME: 'deluge-team'
+  APPSETTINGS: '{{ APPPATH }}/core.conf'
+  APPSHORTNAME: 'deluge'
+  APPSYSTEMD: 'deluged.service'
+  APPSYSTEMD2: 'deluge-web.service'
+  APPSYSTEMDLOC: '{{ SCRIPTPATH }}/{{ APPNAME }}/deluged.service'
+  APPSYSTEMDLOC2: '{{ SCRIPTPATH }}/{{ APPNAME }}/deluge-web.service'
+  APPTITLE: 'Deluge'
+  PASSSEARCH: 'NA'
+  PORTSEARCH: '"port": '
+  USERSEARCH: 'NA'

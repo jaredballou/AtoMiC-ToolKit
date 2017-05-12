@@ -1,0 +1,20 @@
+---
+backup_files:
+- APPSETTINGS
+- APPPATH/ubooquity-4.h2.db
+constants:
+  ACCESSHOST: 'NA'
+  APPDPORT: '2202/admin'
+  APPINITDLOC: '"{{ SCRIPTPATH }}/{{ APPNAME }}/{{ APPNAME }}.init"'
+  APPNAME: 'ubooquity'
+  APPNEWPASS: 'atomic'
+  APPPATH: '/opt/ubooquity'
+  APPSETTINGS: '"{{ APPPATH }}/preferences.xml"'
+  APPSHORTNAME: 'uq'
+  APPSYSTEMD: 'ubooquity.service'
+  APPSYSTEMDLOC: '"{{ SCRIPTPATH }}/ubooquity/{{ APPSYSTEMD }}"'
+  APPTITLE: 'Ubooquity'
+  NEWPASS: 'atomic'
+  PASSSEARCH: 'NA'
+  PORTSEARCH: '<portNumber>'
+  USERSEARCH: 'NA'

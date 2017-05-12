@@ -1,0 +1,21 @@
+---
+backup_files:
+- APPSETTINGS
+constants:
+  ACCESSHOST: 'NA'
+  APPDEPS: 'python python-levenshtein'
+  APPDPORT: '9090'
+  APPGIT: 'https://github.com/nosmokingbandit/watcher.git'
+  APPINITDLOC: '{{ SCRIPTPATH }}/watcher/watcher.init'
+  APPNAME: 'watcher'
+  APPNEWPASS: 'atomic'
+  APPPATH: '/opt/watcher'
+  APPSETTINGS: '{{ APPPATH }}/config.cfg'
+  APPSHORTNAME: 'wt'
+  APPSYSTEMD: 'watcher.service'
+  APPSYSTEMDLOC: '{{ APPPATH }}/run scripts/systemd.init'
+  APPTITLE: 'Watcher'
+  NEWPASS: 'atomic'
+  PASSSEARCH: 'NA'
+  PORTSEARCH: 'serverport": "'
+  USERSEARCH: 'NA'

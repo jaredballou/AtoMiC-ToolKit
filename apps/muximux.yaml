@@ -1,0 +1,15 @@
+---
+backup_files:
+- APPPATH/settings.ini.php
+- APPPATH/muximux.log
+constants:
+  ACCESSHOST: 'NA'
+  APPDPORT: 'muximux'
+  APPGIT: 'https://github.com/mescon/Muximux.git'
+  APPNAME: 'muximux'
+  APPPATH: '/var/www/muximux'
+  APPSETTINGS: 'NA'
+  APPSHORTNAME: 'mm'
+  APPTITLE: 'Muximux'
+  APPUSESNGINX: 'YES'
+  PORTSEARCH: 'NA'

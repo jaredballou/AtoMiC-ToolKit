@@ -1,0 +1,20 @@
+---
+backup_files:
+- APPSETTINGS
+constants:
+  ACCESSHOST: '    ip host : "IP" = '
+  APPDEPS: '"python python-crypto python-pycurl python-imaging \'
+  APPDPORT: '8000'
+  APPGIT: '-b stable https://github.com/pyload/pyload.git'
+  APPINITDLOC: '{{ SCRIPTPATH }}/pyload/pyload.initd'
+  APPNAME: 'pyload'
+  APPPATH: '/opt/pyload'
+  APPSETTINGS: '{{ APPSETTINGSDIR }}/pyload.conf'
+  APPSETTINGSDIR: '"/home/{{ UNAME }}/.pyload"'
+  APPSHORTNAME: 'pl'
+  APPSYSTEMD: 'pyload.service'
+  APPSYSTEMDLOC: '{{ SCRIPTPATH }}/pyload/{{ APPSYSTEMD }}'
+  APPTITLE: 'pyLoad'
+  PASSSEARCH: 'NA'
+  PORTSEARCH: 'NA'
+  USERSEARCH: 'NA'

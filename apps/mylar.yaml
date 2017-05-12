@@ -1,0 +1,26 @@
+---
+backup_files:
+- APPPATH/mylar.ini
+- APPPATH/cache
+- APPPATH/data/mylar.db
+- APPPATH/data/logs
+constants:
+  ACCESSHOST: 'http_host = '
+  APPDEFAULTLOC: '{{ SCRIPTPATH }}/mylar/mylar.default'
+  APPDEPS: 'python python-cherrypy'
+  APPDPORT: '8090'
+  APPGIT: 'https://github.com/evilhero/mylar.git'
+  APPINITDLOC: '{{ APPPATH }}/init-scripts/ubuntu.init.d'
+  APPNAME: 'mylar'
+  APPNEWPASS: 'atomic'
+  APPPATH: '/opt/mylar'
+  APPPIPS: 'tzlocal'
+  APPSETTINGS: '{{ APPPATH }}/mylar.ini'
+  APPSHORTNAME: 'ml'
+  APPSYSTEMD: 'mylar.service'
+  APPSYSTEMDLOC: '{{ SCRIPTPATH }}/mylar/{{ APPSYSTEMD }}'
+  APPTITLE: 'Mylar'
+  NEWPASS: 'atomic'
+  PASSSEARCH: 'http_password = '
+  PORTSEARCH: 'http_port = '
+  USERSEARCH: 'http_username = '

@@ -1,0 +1,19 @@
+---
+backup_files:
+- APPSETTINGS
+- APPPATH/db
+constants:
+  ACCESSHOST: 'NA'
+  APPDPORT: '4040'
+  APPNAME: 'subsonic'
+  APPNEWPASS: 'atomic'
+  APPPATH: '/var/subsonic'
+  APPSETTINGS: '{{ APPPATH }}/subsonic.properties'
+  APPSHORTNAME: 'sub'
+  APPSYSTEMD: 'subsonic.service'
+  APPSYSTEMDLOC: '{{ SCRIPTPATH }}/subsonic/{{ APPSYSTEMD }}'
+  APPTITLE: 'Subsonic'
+  NEWPASS: 'atomic'
+  PASSSEARCH: 'NA'
+  PORTSEARCH: 'Port='
+  USERSEARCH: 'NA'

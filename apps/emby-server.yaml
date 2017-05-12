@@ -1,0 +1,21 @@
+---
+backup_files:
+- APPSETTINGS
+constants:
+  ACCESSHOST: 'host = '
+  APPDPORT: '8096'
+  APPNAME: 'emby-server'
+  APPNEWPASS: 'atomic'
+  APPPATH: '/var/lib/emby-server'
+  APPREPOSITORYNAME: 'emby-server'
+  APPSETTINGS: '{{ APPPATH }}/config/system.xml'
+  APPSHORTNAME: 'emby'
+  APPSYSTEMD: 'emby-server.service'
+  APPTITLE: 'Emby'
+  NEWPASS: 'atomic'
+  PASSSEARCH: 'password = '
+  PORTSEARCH: 'port = '
+  REPOKEYSREQ: 'YES'
+  REPOPPA: 'NO'
+  REPRECVKEYSHORT: '2A7D8A28'
+  USERSEARCH: 'username = '

@@ -1,0 +1,13 @@
+---
+backup_files: {}
+constants:
+  ACCESSHOST: 'NA'
+  APPDPORT: 'rutorrent'
+  APPGIT: 'https://github.com/Novik/ruTorrent.git'
+  APPNAME: 'rutorrent'
+  APPPATH: '/var/www/rutorrent'
+  APPSETTINGS: '"{{ APPPATH }}/conf/config.php"'
+  APPSHORTNAME: 'ut'
+  APPTITLE: 'ruTorrent'
+  APPUSESNGINX: 'YES'
+  PORTSEARCH: 'NA'

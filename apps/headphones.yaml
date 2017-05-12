@@ -1,0 +1,26 @@
+---
+backup_files:
+- APPPATH/headphones.ini
+- APPPATH/data/cache
+- APPPATH/data/headphones.db
+- APPPATH/data/logs/headphones.log
+constants:
+  ACCESSHOST: 'http_host = '
+  APPDEFAULTLOC: '{{ SCRIPTPATH }}/headphones/headphones.default'
+  APPDEPS: 'python python-cheetah python-pyasn1'
+  APPDPORT: '8181'
+  APPGIT: 'https://github.com/rembo10/headphones.git'
+  APPINITDLOC: '{{ SCRIPTPATH }}/headphones/headphones.initd'
+  APPNAME: 'headphones'
+  APPNEWPASS: 'atomic'
+  APPPATH: '/opt/headphones'
+  APPPIDFILE: '/var/run/headphones/headphones.pid'
+  APPSETTINGS: '{{ APPPATH }}/headphones.ini'
+  APPSHORTNAME: 'hp'
+  APPSYSTEMD: 'headphones.service'
+  APPSYSTEMDLOC: '{{ SCRIPTPATH }}/headphones/{{ APPSYSTEMD }}'
+  APPTITLE: 'Headphones'
+  NEWPASS: 'atomic'
+  PASSSEARCH: 'http_password = '
+  PORTSEARCH: 'http_port = '
+  USERSEARCH: 'http_username = '

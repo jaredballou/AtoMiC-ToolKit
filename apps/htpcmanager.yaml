@@ -1,0 +1,24 @@
+---
+backup_files:
+- APPPATH/userdata
+constants:
+  ACCESSHOST: 'NA'
+  APPDEPS: 'python-imaging python-dev python-setuptools python-pip python-cherrypy
+    vnstat python-cheetah python-pyasn1 smartmontools'
+  APPDPORT: '8085'
+  APPGIT: 'https://github.com/Hellowlol/HTPC-Manager'
+  APPINITDLOC: '{{ APPPATH }}/initscripts/initd'
+  APPNAME: 'htpcmanager'
+  APPPATH: '/opt/htpcmanager'
+  APPPIDFILE: '/var/run/htpcmanager/htpcmanager.pid'
+  APPPIPS: 'psutil'
+  APPSETTINGS: 'NA'
+  APPSETTINGSDB: '{{ APPPATH }}/userdata/database.db'
+  APPSETTINGSTYPE: 'DB'
+  APPSHORTNAME: 'hm'
+  APPSYSTEMD: 'htpcmanager.service'
+  APPSYSTEMDLOC: '{{ APPPATH }}/initscripts/systemd.centOS 7'
+  APPTITLE: 'HTPC Manager'
+  DBPASSSEARCH: 'SELECT val FROM setting WHERE key = "app_password";'
+  DBUSERSEARCH: 'SELECT val FROM setting WHERE key = "app_username";'
+  PORTSEARCH: 'NA'

@@ -1,0 +1,23 @@
+---
+backup_files:
+- APPSETTINGS
+constants:
+  ACCESSHOST: 'http_host = '
+  APPDEFAULTLOC: '{{ SCRIPTPATH }}/plexpy/plexpy.default'
+  APPDPORT: '8182'
+  APPGIT: 'https://github.com/JonnyWong16/plexpy.git'
+  APPINITDLOC: '{{ APPPATH }}/init-scripts/init.ubuntu'
+  APPNAME: 'plexpy'
+  APPNEWPASS: 'atomic'
+  APPPATH: '/opt/plexpy'
+  APPSETTINGS: '{{ APPPATH }}/config.ini'
+  APPSETTINGSDB: '{{ APPPATH }}/plexpy.db'
+  APPSETTINGSTYPE: 'DB'
+  APPSHORTNAME: 'pp'
+  APPSYSTEMD: 'plexpy.service'
+  APPSYSTEMDLOC: '{{ APPPATH }}/init-scripts/init.systemd'
+  APPTITLE: 'PlexPy'
+  DBPASSSEARCH: 'NA'
+  DBUSERSEARCH: 'SELECT username FROM users WHERE id = 2;'
+  NEWPASS: 'atomic'
+  PORTSEARCH: 'http_port = '

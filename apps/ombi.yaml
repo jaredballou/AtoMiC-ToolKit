@@ -1,0 +1,20 @@
+---
+backup_files:
+- APPSETTINGS
+constants:
+  ACCESSHOST: 'NA'
+  APPDEPS: 'libmono-cil-dev'
+  APPDOWNLOADURL: 'https://api.github.com/ombi/ombi/releases'
+  APPDPORT: '3579'
+  APPINITDLOC: '{{ SCRIPTPATH }}/ombi/ombi.init'
+  APPNAME: 'ombi'
+  APPPATH: '/opt/ombi'
+  APPSETTINGSDB: '{{ APPSETTINGSDIR }}/Ombi.sqlite'
+  APPSETTINGSDIR: '{{ APPPATH }}'
+  APPSETTINGSTYPE: 'DB'
+  APPSHORTNAME: 'ombi'
+  APPSYSTEMD: 'ombi.service'
+  APPSYSTEMDLOC: '{{ SCRIPTPATH }}/ombi/{{ APPSYSTEMD }}'
+  APPTITLE: 'ombi'
+  DBPASSSEARCH: 'NA'
+  DBUSERSEARCH: 'SELECT UserName FROM Users WHERE ID = 1;'

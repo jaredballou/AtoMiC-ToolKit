@@ -1,0 +1,21 @@
+---
+backup_files:
+- APPSETTINGS
+constants:
+  APPDEPS: 'libmono-cil-dev'
+  APPDOWNLOADURL: 'https://api.github.com/Radarr/Radarr/releases'
+  APPDPORT: '7878'
+  APPINITDLOC: '{{ SCRIPTPATH }}/radarr/radarr.init'
+  APPNAME: 'radarr'
+  APPPATH: '/opt/radarr'
+  APPSETTINGS: '{{ APPSETTINGSDIR }}/config.xml'
+  APPSETTINGSDB: '{{ APPSETTINGSDIR }}/nzbdrone.db'
+  APPSETTINGSDIR: '"/home/{{ UNAME }}/.config/Radarr"'
+  APPSETTINGSTYPE: 'DB'
+  APPSHORTNAME: 'radarr'
+  APPSYSTEMD: 'radarr.service'
+  APPSYSTEMDLOC: '{{ SCRIPTPATH }}/radarr/{{ APPSYSTEMD }}'
+  APPTITLE: 'radarr'
+  DBPASSSEARCH: 'NA'
+  DBUSERSEARCH: 'SELECT Username FROM Users WHERE Id = 1;'
+  PORTSEARCH: '<port>'

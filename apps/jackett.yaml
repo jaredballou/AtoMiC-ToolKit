@@ -1,0 +1,18 @@
+---
+backup_files:
+- APPSETTINGS
+constants:
+  APPDEPS: 'libcurl4-openssl-dev'
+  APPDPORT: '9117'
+  APPINITDLOC: '{{ SCRIPTPATH }}/jackett/jackett.init'
+  APPNAME: 'jackett'
+  APPPATH: '/opt/jackett'
+  APPSETTINGS: '{{ APPSETTINGSDIR }}/ServerConfig.json'
+  APPSETTINGSDIR: '"/home/{{ UNAME }}/.config/Jackett"'
+  APPSHORTNAME: 'jk'
+  APPSYSTEMD: 'jackett.service'
+  APPSYSTEMDLOC: '{{ SCRIPTPATH }}/jackett/{{ APPSYSTEMD }}'
+  APPTITLE: 'Jackett'
+  PASSSEARCH: 'NA'
+  PORTSEARCH: '"Port": '
+  USERSEARCH: 'NA'

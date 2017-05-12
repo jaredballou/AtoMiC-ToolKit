@@ -1,0 +1,21 @@
+---
+backup_files:
+- APPPATH/miniserv.conf
+constants:
+  ACCESSHOST: 'NA'
+  APPDEFAULTPASS: 'System Password'
+  APPDEFAULTUNAME: 'System Username'
+  APPDPORT: '10000'
+  APPNAME: 'webmin'
+  APPPATH: '/etc/webmin'
+  APPREPOSITORYLINK: 'deb http://download.webmin.com/download/repository sarge contrib'
+  APPREPOSITORYNAME: 'webmin'
+  APPSETTINGS: '{{ APPPATH }}/miniserv.conf'
+  APPSHORTNAME: 'wm'
+  APPTITLE: 'Webmin'
+  PORTSEARCH: 'NA'
+  REPOKEYSREQ: 'YES'
+  REPOPPA: 'NO'
+  REPRECVKEYSASC: 'http://www.webmin.com/jcameron-key.asc'
+  REPRECVKEYSHORT: '11F63C51'
+  USERSEARCH: 'NA'

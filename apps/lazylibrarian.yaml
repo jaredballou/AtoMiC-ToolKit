@@ -1,0 +1,26 @@
+---
+backup_files:
+- APPPATH/lazylibrarian.ini
+- APPPATH/data/cache
+- APPPATH/data/lazylibrarian.db
+- APPPATH/data/Logs/lazylibrarian.log
+constants:
+  ACCESSHOST: 'http_host = '
+  APPDEFAULTLOC: '{{ APPPATH }}/init/lazylibrarian.default'
+  APPDEPS: 'python'
+  APPDPORT: '5299'
+  APPGIT: 'https://github.com/DobyTang/LazyLibrarian.git'
+  APPINITDLOC: '{{ APPPATH }}/init/lazylibrarian.initd'
+  APPNAME: 'lazylibrarian'
+  APPNEWPASS: 'atomic'
+  APPPATH: '/opt/lazylibrarian'
+  APPPIDFILE: '/var/run/lazylibrarian/lazylibrarian.pid'
+  APPSETTINGS: '{{ APPPATH }}/lazylibrarian.ini'
+  APPSHORTNAME: 'll'
+  APPSYSTEMD: 'lazylibrarian.service'
+  APPSYSTEMDLOC: '{{ APPPATH }}/init/{{ APPSYSTEMD }}'
+  APPTITLE: 'Lazy Librarian'
+  NEWPASS: 'atomic'
+  PASSSEARCH: 'http_pass = '
+  PORTSEARCH: 'http_port = '
+  USERSEARCH: 'http_user = '

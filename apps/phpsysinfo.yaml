@@ -1,0 +1,13 @@
+---
+backup_files: {}
+constants:
+  ACCESSHOST: 'NA'
+  APPDPORT: 'phpsysinfo'
+  APPGIT: 'https://github.com/phpsysinfo/phpsysinfo.git'
+  APPNAME: 'phpsysinfo'
+  APPPATH: '/var/www/phpsysinfo'
+  APPSETTINGS: 'NA'
+  APPSHORTNAME: 'ps'
+  APPTITLE: 'phpSysInfo'
+  APPUSESNGINX: 'YES'
+  PORTSEARCH: 'NA'

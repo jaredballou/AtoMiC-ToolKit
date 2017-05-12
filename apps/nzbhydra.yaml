@@ -1,0 +1,24 @@
+---
+backup_files:
+- APPPATH/nzbhydra.cfg
+- APPPATH/nzbhydra.db
+- APPPATH/nzbhydra.log
+constants:
+  ACCESSHOST: 'NA'
+  APPDEFAULTLOC: '{{ APPPATH }}/contrib/defaults'
+  APPDEPS: 'python'
+  APPDPORT: '5075'
+  APPGIT: 'https://github.com/theotherp/nzbhydra'
+  APPINITDLOC: '{{ APPPATH }}/contrib/init.ubuntu'
+  APPNAME: 'nzbhydra'
+  APPNEWPASS: 'atomic'
+  APPPATH: '/opt/nzbhydra'
+  APPPIDFILE: '/var/run/nzbhydra/nzbhydra.pid'
+  APPSETTINGS: '{{ APPPATH }}/nzbhydra.cfg'
+  APPSHORTNAME: 'nh'
+  APPSYSTEMD: 'nzbhydra.service'
+  APPSYSTEMDLOC: '{{ APPPATH }}/contrib/{{ APPSYSTEMD }}'
+  APPTITLE: 'NZBHydra'
+  NEWPASS: 'atomic'
+  PORTSEARCH: '"port":'
+  USERSEARCH: 'NA'

@@ -1,0 +1,13 @@
+---
+backup_files: {}
+constants:
+  ACCESSHOST: 'NA'
+  APPDPORT: 'organizr'
+  APPGIT: 'https://github.com/causefx/Organizr.git'
+  APPNAME: 'organizr'
+  APPPATH: '/var/www/organizr'
+  APPSETTINGS: 'NA'
+  APPSHORTNAME: 'oz'
+  APPTITLE: 'Organizr'
+  APPUSESNGINX: 'YES'
+  PORTSEARCH: 'NA'

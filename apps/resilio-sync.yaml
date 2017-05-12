@@ -1,0 +1,15 @@
+---
+backup_files: {}
+constants:
+  ACCESSHOST: 'NA'
+  APPDPORT: '8888'
+  APPNAME: 'resilio-sync'
+  APPPATH: '"/var/lib/resilio-sync"'
+  APPREPOSITORYNAME: 'resilio-sync'
+  APPSETTINGS: '"{{ APPSETTINGSDIR }}/config.json"'
+  APPSETTINGSDIR: '"/home/{{ UNAME }}/.config/resilio-sync"'
+  APPSHORTNAME: 'rs'
+  APPSYSTEMD: 'resilio-sync.service'
+  APPSYSTEMDOVERIDE: '"{{ SCRIPTPATH }}/resilio-sync/resilio-sync-override.conf"'
+  APPTITLE: 'Resilio Sync'
+  PORTSEARCH: 'NA'

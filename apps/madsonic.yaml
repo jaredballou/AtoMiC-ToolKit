@@ -1,0 +1,19 @@
+---
+backup_files:
+- APPSETTINGS
+- APPPATH/db
+constants:
+  ACCESSHOST: 'NA'
+  APPDPORT: '4040'
+  APPNAME: 'madsonic'
+  APPNEWPASS: 'atomic'
+  APPPATH: '/var/madsonic'
+  APPSETTINGS: '{{ APPPATH }}/madsonic.properties'
+  APPSHORTNAME: 'sub'
+  APPSYSTEMD: 'madsonic.service'
+  APPSYSTEMDLOC: '{{ SCRIPTPATH }}/madsonic/{{ APPSYSTEMD }}'
+  APPTITLE: 'Madsonic'
+  NEWPASS: 'atomic'
+  PASSSEARCH: 'NA'
+  PORTSEARCH: 'Port='
+  USERSEARCH: 'NA'

@@ -1,0 +1,20 @@
+---
+backup_files:
+- APPPATH
+constants:
+  APPDEFAULTPASS: 'transmission'
+  APPDEFAULTUNAME: 'transmission'
+  APPDEPS: 'transmission-cli transmission-common'
+  APPDPORT: '9091'
+  APPNAME: 'transmission-daemon'
+  APPNEWPASS: 
+  APPPATH: '"/home/{{ UNAME }}/.config/transmission-daemon"'
+  APPREPOSITORYNAME: 'transmissionbt'
+  APPSETTINGS: '{{ APPPATH }}/settings.json'
+  APPSHORTNAME: 'trans'
+  APPSYSTEMD: 'transmission-daemon.service'
+  APPSYSTEMDOVERIDE: '"{{ SCRIPTPATH }}/transmission-daemon/transmission-daemon-override.conf"'
+  APPTITLE: 'Transmission Daemon'
+  PASSSEARCH: '"rpc-password": "'
+  PORTSEARCH: '"rpc-port":'
+  USERSEARCH: '"rpc-username":'

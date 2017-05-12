@@ -1,0 +1,26 @@
+---
+backup_files:
+- APPSETTINGSDIR
+constants:
+  APPDPORT: '8989'
+  APPINITDLOC: '{{ SCRIPTPATH }}/sonarr/sonarr.init'
+  APPNAME: 'sonarr'
+  APPPATH: '/opt/NzbDrone'
+  APPREPOSITORYLINK: 'deb http://apt.sonarr.tv/ master main'
+  APPREPOSITORYNAME: 'sonarr'
+  APPSETTINGS: '{{ APPSETTINGSDIR }}/config.xml'
+  APPSETTINGSDB: '{{ APPSETTINGSDIR }}/nzbdrone.db'
+  APPSETTINGSDIR: '"/home/{{ UNAME }}/.config/NzbDrone"'
+  APPSETTINGSTYPE: 'DB'
+  APPSHORTNAME: 'sonarr'
+  APPSYSTEMD: 'sonarr.service'
+  APPSYSTEMDLOC: '{{ SCRIPTPATH }}/sonarr/{{ APPSYSTEMD }}'
+  APPTITLE: 'Sonarr'
+  DBPASSSEARCH: 'NA'
+  DBUSERSEARCH: 'SELECT Username FROM Users WHERE Id = 1;'
+  PORTSEARCH: '<port>'
+  REPKEYSERVER: 'hkp://keyserver.ubuntu.com:80'
+  REPOKEYSREQ: 'YES'
+  REPOPPA: 'NO'
+  REPRECVKEYS: 'FDA5DFFC'
+  REPRECVKEYSHORT: 'D9B78493'

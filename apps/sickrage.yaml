@@ -1,0 +1,28 @@
+---
+backup_files:
+- APPPATH/data/config.ini
+- APPPATH/data/sickbeard.db
+- APPPATH/data/cache.db
+- APPPATH/data/failed.db
+- APPPATH/data/cache
+- APPPATH/data/Logs
+constants:
+  ACCESSHOST: 'web_host = '
+  APPDEFAULTLOC: '{{ SCRIPTPATH }}/sickrage/sickrage.default'
+  APPDEPS: 'libsqlite3-dev libbz2-dev libreadline-dev libssl-dev zlib1g-dev python
+    python-cheetah python-pyasn1'
+  APPDPORT: '8081'
+  APPGIT: 'https://github.com/sickrage/sickrage.git'
+  APPINITDLOC: '{{ APPPATH }}/runscripts/init.ubuntu'
+  APPNAME: 'sickrage'
+  APPNEWPASS: 'atomic'
+  APPPATH: '/opt/sickrage'
+  APPSETTINGS: '{{ APPPATH }}/data/config.ini'
+  APPSHORTNAME: 'sr'
+  APPSYSTEMD: 'sickrage.service'
+  APPSYSTEMDLOC: '{{ APPPATH }}/runscripts/init.systemd'
+  APPTITLE: 'SickRage'
+  NEWPASS: 'atomic'
+  PASSSEARCH: 'web_password = '
+  PORTSEARCH: 'web_port = '
+  USERSEARCH: 'web_username = '

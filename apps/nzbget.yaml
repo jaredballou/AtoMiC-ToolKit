@@ -1,0 +1,22 @@
+---
+backup_files:
+- APPPATH/nzbget.conf
+constants:
+  ACCESSHOST: 'ControlIP='
+  APPDPORT: '6789'
+  APPINITDLOC: '{{ SCRIPTPATH }}/nzbget/nzbget.initd'
+  APPNAME: 'nzbget'
+  APPNEWPASS: 'atomic'
+  APPPATH: '/opt/nzbget'
+  APPSETTINGS: '{{ APPPATH }}/nzbget.conf'
+  APPSHORTNAME: 'ng'
+  APPSYSTEMD: 'nzbget.service'
+  APPSYSTEMDLOC: '{{ SCRIPTPATH }}/nzbget/{{ APPSYSTEMD }}'
+  APPTITLE: 'NZBGet'
+  NEWPASS: 'atomic'
+  NZBGET_BIN: '{{ APPPATH }}/nzbget'
+  NZBGET_CONF: '{{ APPSETTINGS }}'
+  PASSSEARCH: 'ControlPassword='
+  PID_FILE: '{{ APPPATH }}/downloads/nzbget.lock'
+  PORTSEARCH: 'ControlPort='
+  USERSEARCH: 'ControlUsername='

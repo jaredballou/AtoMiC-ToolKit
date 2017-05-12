@@ -1,0 +1,26 @@
+---
+backup_files:
+- /var/lib/plexmediaserver/Library/Application Support/Plex Media Server
+constants:
+  ACCESSHOST: 'NA'
+  APPDPORT: '32400'
+  APPNAME: 'plexmediaserver'
+  APPNEWPASS: 'atomic'
+  APPPATH: '/var/lib/plexmediaserver'
+  APPREPOSITORYNAME: 'plexmediaserver'
+  APPSETTINGSDB: '/var/lib/plexmediaserver/Library/Application Support/Plex Media
+    Server/Plug-in Support/Databases/com.plexapp.plugins.library.db'
+  APPSETTINGSDIR: '/var/lib/plexmediaserver/Library/Application Support/Plex Media
+    Server'
+  APPSETTINGSTYPE: 'DB'
+  APPSHORTNAME: 'plex'
+  APPSYSTEMD: 'plexmediaserver.service'
+  APPSYSTEMDLOC: '"{{ SCRIPTPATH }}/plexmediaserver/plexmediaserver.service"'
+  APPSYSTEMDOVERIDE: '"{{ SCRIPTPATH }}/plexmediaserver/plexmediaserver-override.conf"'
+  APPTITLE: 'Plex Media Server'
+  DBPASSSEARCH: 'NA'
+  DBUSERSEARCH: 'SELECT name FROM accounts WHERE id = 1;'
+  NEWPASS: 'atomic'
+  PORTSEARCH: 'NA'
+  REPOKEYSREQ: 'YES'
+  REPOPPA: 'NO'

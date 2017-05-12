@@ -1,0 +1,12 @@
+---
+backup_files:
+- APPSETTINGS
+constants:
+  APPDEPS: 'tmux'
+  APPINITDLOC: '{{ SCRIPTPATH }}/rtorrent/rtorrent.init'
+  APPNAME: 'rtorrent'
+  APPSETTINGS: '"/home/{{ UNAME }}/.rtorrent.rc"'
+  APPSHORTNAME: 'rt'
+  APPSYSTEMD: 'rtorrent.service'
+  APPSYSTEMDLOC: '{{ SCRIPTPATH }}/rtorrent/rtorrent.service'
+  APPTITLE: 'rTorrent'

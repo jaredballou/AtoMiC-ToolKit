@@ -1,0 +1,29 @@
+---
+backup_files:
+- APPPATH/data/config.ini
+- APPPATH/data/sickbeard.db
+- APPPATH/data/cache.db
+- APPPATH/data/failed.db
+- APPPATH/autoProcessTV/autoProcessTV.cfg
+- APPPATH/data/cache
+- APPPATH/data/Logs
+constants:
+  ACCESSHOST: 'web_host = '
+  APPDEFAULTLOC: '{{ SCRIPTPATH }}/sickgear/sickgear.default'
+  APPDEPS: 'libsqlite3-dev libbz2-dev libreadline-dev libssl-dev zlib1g-dev python
+    python-cheetah python-pyasn1'
+  APPDPORT: '8081'
+  APPGIT: 'https://github.com/SickGear/SickGear.git'
+  APPINITDLOC: '{{ APPPATH }}/init-scripts/init.ubuntu'
+  APPNAME: 'sickgear'
+  APPNEWPASS: 'atomic'
+  APPPATH: '/opt/sickgear'
+  APPSETTINGS: '{{ APPPATH }}/data/config.ini'
+  APPSHORTNAME: 'sg'
+  APPSYSTEMD: 'sickgear.service'
+  APPSYSTEMDLOC: '{{ APPPATH }}/init-scripts/init.systemd'
+  APPTITLE: 'SickGear'
+  NEWPASS: 'atomic'
+  PASSSEARCH: 'web_password = '
+  PORTSEARCH: 'web_port = '
+  USERSEARCH: 'web_username = '

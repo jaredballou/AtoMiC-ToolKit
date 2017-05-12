@@ -1,0 +1,27 @@
+---
+backup_files:
+- /usr/share/sabnzbdplus/sabnzbdplus.ini
+- /usr/share/sabnzbdplus/logs/sabnzbd.log
+constants:
+  ACCESSHOST: 'host = '
+  APPDEFAULTLOC: '{{ SCRIPTPATH }}/sabnzbdplus/sabnzbdplus.default'
+  APPDEPS: 'python-pip python-dev libssl-dev libffi-dev'
+  APPDPORT: '8080'
+  APPINITDLOC: '{{ SCRIPTPATH }}/sabnzbdplus/sabnzbdplus.init'
+  APPNAME: 'sabnzbdplus'
+  APPNEWPASS: 'atomic'
+  APPPATH: '/usr/share/sabnzbdplus'
+  APPPIPS: 'cffi cryptography sabyenc'
+  APPREPOSITORYNAME: 'jcfp'
+  APPSETTINGS: '{{ APPPATH }}/sabnzbdplus.ini'
+  APPSHORTNAME: 'sab'
+  APPSYSTEMD: 'sabnzbdplus.service'
+  APPSYSTEMDLOC: '{{ SCRIPTPATH }}/sabnzbdplus/{{ APPSYSTEMD }}'
+  APPTITLE: 'SABnzbd+'
+  NEWPASS: 'atomic'
+  PASSSEARCH: 'password = '
+  PORTSEARCH: 'port = '
+  REPKEYSERVER: 'hkp://pool.sks-keyservers.net:11371'
+  REPRECVKEYS: '0x98703123E0F52B2BE16D586EF13930B14BB9F05F'
+  REPRECVKEYSHORT: '4BB9F05F'
+  USERSEARCH: 'username = '
