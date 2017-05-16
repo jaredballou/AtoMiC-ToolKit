@@ -1,0 +1,15 @@
+categories:
+  downloaders:
+    torrent:
+    nzb:
+    other:
+  search:
+    tv:
+    music:
+    movies:
+    other:
+  frontend:
+    xbmc:
+      - kodi
+    plex:
+      - plexpy
