@@ -1,3 +1,42 @@
+---
+# apps are the dewfault list of applications to support.
+# TODO: Rethink this based on polling apps/ folder.
+apps:
+  - couchpotato
+  - deluged
+  - emby-server
+  - headphones
+  - htpcmanager
+  - jackett
+  - kodi
+  - lazylibrarian
+  - madsonic
+  - muximux
+  - mylar
+  - nzbget
+  - nzbhydra
+  - ombi
+  - organizr
+  - phpsysinfo
+  - plexmediaserver
+  - plexpy
+  - pyload
+  - qbittorrent-nox
+  - radarr
+  - resilio-sync
+  - rtorrent
+  - rutorrent
+  - sabnzbdplus
+  - sickgear
+  - sickrage
+  - sonarr
+  - subsonic
+  - transmission-daemon
+  - ubooquity
+  - watcher
+  - webmin
+
+# categories for organizing applications.
 categories:
   downloaders:
     torrent:
@@ -9,7 +48,20 @@ categories:
     movies:
     other:
   frontend:
-    xbmc:
-      - kodi
-    plex:
-      - plexpy
+    - xbmc
+    - plex:
+
+# configs are menu/config combinations to present as a profile
+configs:
+  newbie:
+    apps:
+    options:
+
+# alternatives are groups of apps that are "forks" of the main app, meaning only one can be selected at a time.
+alternatives:
+  sickbeard:
+    - sickgear
+    - sickrage
+  xbmc:
+    - kodi
+    - xbmc

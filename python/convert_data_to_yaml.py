@@ -42,6 +42,20 @@ app_list = [
 ]
 
 def main():
+	write_apps()
+
+# BASH config variables. Get this out of here.
+def write_app_list():
+	# Write app list
+	with open("apps.yaml", 'w') as file:
+		file.write(yaml.dump(app_list, default_flow_style=False, explicit_start=True))
+
+def write_config_schema():
+	# Write config schema
+	with open("config.schema.yaml", 'w') as file:
+		file.write(yaml.dump(spec_app, default_flow_style=False, explicit_start=True))
+
+def write_apps():
 	for app in app_list:
 		convert_app(app)
 

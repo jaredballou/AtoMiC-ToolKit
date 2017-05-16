@@ -5,41 +5,7 @@ from glorpen.config.fields import Dict, String, Path, LogLevel
 import os
 import yaml
 
-app_list = [
-	'couchpotato',
-	'deluged',
-	'emby-server',
-	'headphones',
-	'htpcmanager',
-	'jackett',
-	'kodi',
-	'lazylibrarian',
-	'madsonic',
-	'muximux',
-	'mylar',
-	'nzbget',
-	'nzbhydra',
-	'ombi',
-	'organizr',
-	'phpsysinfo',
-	'plexmediaserver',
-	'plexpy',
-	'pyload',
-	'qbittorrent-nox',
-	'radarr',
-	'resilio-sync',
-	'rtorrent',
-	'rutorrent',
-	'sabnzbdplus',
-	'sickgear',
-	'sickrage',
-	'sonarr',
-	'subsonic',
-	'transmission-daemon',
-	'ubooquity',
-	'watcher',
-	'webmin',
-]
+# BASH config variables. Get this out of here.
 spec_app = Dict(
 	ACCESSHOST = String(allow_blank = True),
 	APPDEFAULTLOC = String(allow_blank = True),
@@ -90,6 +56,18 @@ spec_app = Dict(
 )
 
 def main():
+	pass
+
+def write_app_list():
+	# Write app list
+	with open("apps.yaml", 'w') as file:
+		file.write(yaml.dump(app_list, default_flow_style=False, explicit_start=True))
+
+def write_config_schema():
+	# Write config schema
+	with open("config.schema.yaml", 'w') as file:
+		file.write(yaml.dump(spec_app, default_flow_style=False, explicit_start=True))
+def write_apps():
 	for app in app_list:
 		check_app(app)
 
